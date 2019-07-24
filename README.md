@@ -15,4 +15,3 @@ Vamos a pasar a una etapa de verificar los elementos de diseño que añadiremos 
 Construiremos paso a paso la estructura base de nuestros componentes, agregándole los estilos y funcionalidades que requerimos en nuestra aplicación.
 
 Usaremos el archivo global.css que se encuentra en <https://gist.github.com/gn…/1dac0b04c16686fca141c56d0221f883> el cual tiene absolutamente todos los estilos que se usarán en nuestro proyecto, para que nuestro webpack detecte el CSS haremos npm install css-loader style-loader --save-dev y luego configuraremos webpack.config.js para que lea los archivos CSS y los compile, entramos a App.jsx y añadimos import ‘../styles/global.css’, finalmente ya estará trabajando nuestro proyecto con los estilos ya implementados. Está demás decir que puedes crear tu propio diseño y compartirlo en los comentarios para que todos lo podamos ver.
-
