@@ -1,4 +1,6 @@
 import firebase from 'firebase/app'
+import 'firebase/storage'
+import 'firebase/database'
 import 'firebase/auth'
 
 const config = {
@@ -14,4 +16,6 @@ const config = {
 firebase.initializeApp(config)
 
 export const { auth } = firebase
+export const storage = firebase.storage()
+export const database = firebase.database()
 export const provider = new firebase.auth.FacebookAuthProvider()

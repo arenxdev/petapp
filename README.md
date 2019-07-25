@@ -55,3 +55,17 @@ Después de hacer el código de nuestra función correremos ‘firebase deploy�
 Debemos instalar Postman en <https://www.getpostman.com/> para hacer las pruebas pertinentes de nuestra API ya creada.
 
 Recuerda que puedes encontrar el repositorio del proyecto en <https://github.com/gndx/patitas.arepa.dev>
+
+## INTEGRACION DE LA API A NUESTRO PROYECTO
+
+Ahora realizaremos la integración de la API que ya creamos en la clase anterior usando React Hooks y React Redux.
+
+Vamos a crear un custom Hook para nuestro proyecto. React Hooks es una implementación desde la versión 16.8, es la actualización que ha tenido una mayor rapidez de adaptación por parte de la comunidad.
+
+Configuraremos nuestro Home.jsx para obtener los datos de nuestra API y luego de ello usar esos datos para mostrarlo en la página con los estilos que ya definimos previamente, recuerda que puedes utilizar tus propios estilos y compartirlo en la sección de comentarios.
+
+Usaremos la librería moment disponible en <https://momentjs.com/>, la instalaremos en nuestro proyecto y usaremos para el manejo de fechas, horas y días que provienen desde nuestro Backend para darle un formato más amigable al usuario.
+
+Añadiremos funcionalidad para permitirle a nuestros usuarios publicar sus mascotas en nuestro sitio.
+
+Recuerda que puedes encontrar el repositorio en <https://github.com/gndx/patitas.arepa.dev>
