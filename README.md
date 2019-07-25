@@ -37,3 +37,21 @@ Debemos entrar a nuestra cuenta de Facebook for Developers y activar el servicio
 Configuraremos Firebase en nuestro proyecto, lo configuraremos para poder usar sus servicios en nuestro proyecto, el servicio de autenticación y luego configurarlo con Facebook.
 
 Recuerda que puedes encontrar el repositorio en <https://github.com/gndx/patitas.arepa.dev>
+
+### CREANDO NUESTRA API CON FIREBASE
+
+Esta clase es la más importante de nuestro proyecto, aquí crearemos una API con Firebase Functions para hacer GET, POST, PUT y DELETE, también implementaremos React Hooks para manejar el estado de nuestros componentes.
+
+Debemos crear un proyecto alterno en el cual manejaremos el Backend de nuestra aplicación, crearemos una nueva carpeta la cual usaremos para crear dicho proyecto alterno que se encargará de manejar Firebase Cloud Functions. Con FCF expondremos la base de datos de Firebase para poder consumirla como una API, para esto utilizaremos CFC el cual es un servicio que ya nos trae Firebase de forma gratuita.
+
+Recuerda inicializar tu proyecto con ‘git init’ o el comando de tu manejador de versiones favorito para almacenar nuestro código en la nube.
+
+Debemos instalar Firebase como paquete global para hacer uso de FCF con: npm install -g firebase-tools, luego vamos a iniciar sesión en firebase-tools con: firebase login, luego vamos a inicializar Firebase con firebase init.
+
+Ahora iremos a Database en <https://console.firebase.google.com/> y crearemos una nueva base de datos con Realtime Database, la iniciaremos en test mode para hacer pruebas, más adelante utilizaremos las reglas para hacer una base de datos más segura.
+
+Después de hacer el código de nuestra función correremos ‘firebase deploy’ en nuestra terminal para poder hacer uso de las Firebase Cloud Functions en nuestro Frontend.
+
+Debemos instalar Postman en <https://www.getpostman.com/> para hacer las pruebas pertinentes de nuestra API ya creada.
+
+Recuerda que puedes encontrar el repositorio del proyecto en <https://github.com/gndx/patitas.arepa.dev>
