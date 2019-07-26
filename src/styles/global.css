@@ -103,7 +103,7 @@ body {
   width: 280px;
   margin: 0 auto;
 }
-.Login-btn i {
+.Login i {
   margin: 0 .5em 0 0;
   font-size: 20px;
 }
@@ -159,6 +159,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
   grid-row-gap: 1em;
+}
+.Home-items a {
+  text-decoration: none;
 }
 .Pets-items-inner {
   display: grid;
@@ -394,6 +397,13 @@ body {
   bottom: 0;
   z-index: 8;
   cursor: pointer;
+}
+.Modal-login {
+  background-color: #fff;
+  padding: 1em;
+  display: block;
+  width: 420px;
+  position: relative;
 }
 .Form {
   background-color: #fff;

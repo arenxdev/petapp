@@ -69,3 +69,27 @@ Usaremos la librería moment disponible en <https://momentjs.com/>, la instalare
 Añadiremos funcionalidad para permitirle a nuestros usuarios publicar sus mascotas en nuestro sitio.
 
 Recuerda que puedes encontrar el repositorio en <https://github.com/gndx/patitas.arepa.dev>
+
+## INSTALACION Y CONFIGURACIÓN DE REDUX
+
+Esta es la última clase del curso y te enseñaremos cómo integrar Redux en nuestro sitio y hacer deploy de nuestra aplicación; tranquilo, Redux no es tan difícil como suena.
+
+Redux se rige por tres principios:
+
+- Única fuente de la verdad.
+- El estado es de solo lectura.
+- Los cambios se realizan con funciones puras.
+
+Instalaremos Redux con: npm install redux react-redux --save
+
+Usaremos Redux para manejar el estado único de nuestro usuario, al iniciar sesión estos datos se enviarán al estado en Redux para luego pasarlo a Firebase.
+
+Configuraremos completamente nuestro proyecto usando Redux para conectarlos entre sí y manejar solo una fuente de la verdad para nuestro proyecto.
+
+Por último, haremos **deploy** de la aplicación en el hosting de Firebase con `firebase init` y vamos a elegir **hosting** como el servicio dentro de la consola y finalmente haremos `firebase deploy` y en ese momento Firebase se encargará de agarrar la carpeta y empujarla al servidor.
+
+El proyecto ya funcionando lo podremos ver en <https://patitas-1fc32.firebaseapp.com/> recuerda que Firebase generará una URL única para cada proyecto.
+
+Felicidades por haber llegado al final de este curso, sabemos que no fue fácil, pero de lo que estamos seguros es que nunca vas a parar de aprender 🤞
+
+Recuerda que puedes encontrar el repositorio en <https://github.com/gndx/patitas.arepa.dev>

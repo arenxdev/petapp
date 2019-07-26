@@ -20,8 +20,8 @@ const PetItem = ({ pet }) => {
         <div className="Pets-head">
           <h2>{pet.name}</h2>
           <i>
-            {pet.type === 'male' && '♂'}
-            {pet.type === 'female' && '♀'}
+            {pet.gender === 'male' && '♂'}
+            {pet.gender === 'female' && '♀'}
           </i>
         </div>
         <p>{pet.description}</p>

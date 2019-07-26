@@ -17,12 +17,12 @@ const PetInfo = ({ pet }) => {
             <p>
               {pet.description}
               <i>
-                {pet.type === 'male' && '♂'}
-                {pet.type === 'female' && '♀'}
+                {pet.gender === 'male' && '♂'}
+                {pet.gender === 'female' && '♀'}
               </i>
             </p>
             <div className="PetInfo-type">
-              <button>
+              <button className="PetInfo-btn">
                 Adopt
               </button>
             </div>

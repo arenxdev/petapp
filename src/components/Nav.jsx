@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-const Nav = () => (
+const Nav = props => (
   <div className="Nav">
     <ul>
       <li><Link to="/">Home</Link></li>
-      <li><Link to="/login">Login</Link></li>
-      <li><Link to="/panel">Give for adoption</Link></li>
+      {props.login && <li><Link to="/panel">Account</Link></li>}
+      {!props.login && <li><Link to="/login">Login</Link></li>}
+      <li><a onClick={props.showModal}>Give in adopton</a></li>
     </ul>
   </div>
 )
 
-export default Nav
+const mapStateToProps = state => ({login: state.login})
+export default connect(mapStateToProps)(Nav)

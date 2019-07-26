@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { storage, database } from '../utils/firebase'
+import { connect } from 'react-redux'
 
-const Form = () => {
+const Form = props => {
 
   const [petPhoto, setPetPhoto] = useState('')
   const [sendForm, setSendForm] = useState(false)
@@ -11,7 +12,6 @@ const Form = () => {
     const form = new FormData(event.target)
     const newDate = new Date().toISOString()
 
-    debugger
     const data = {
       'adopt': form.get('adopt'),
       'date': newDate,
@@ -19,10 +19,10 @@ const Form = () => {
       'gender': form.get('gender'),
       'name': form.get('name'),
       'photo': petPhoto,
-      'profilePic': '',
+      'profilePic': props.user.photoURL,
       'type': form.get('type'),
-      'userContact': '',
-      'userName': ''
+      'userContact': props.user.email,
+      'userName': props.user.displayName
     }
 
     database.ref('pets').push(data)
@@ -82,4 +82,6 @@ const Form = () => {
   )
 }
 
-export default Form
+const mapStateToProps = state => ({user: state.user})
+
+export default connect(mapStateToProps)(Form)
